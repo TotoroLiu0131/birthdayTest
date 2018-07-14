@@ -13,6 +13,7 @@ namespace _0630Tests
         public void today_is_joey_birthday()
         {
             GivenDate(new DateTime(2018, 9, 1));
+
             TheResultShouldBe("Happy Birthday");
         }
 
@@ -30,6 +31,7 @@ namespace _0630Tests
         public void today_is_not_joey_birthday()
         {
             GivenDate(new DateTime(2018, 1, 1));
+
             TheResultShouldBe("No");
         }
     }
